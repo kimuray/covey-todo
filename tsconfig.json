@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "declaration": false,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2019"
+    ],
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
