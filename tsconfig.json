@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "es6",
     "module": "es6",
     "esModuleInterop": true,
@@ -13,6 +14,9 @@
     ],
     "moduleResolution": "node"
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules"
   ]
