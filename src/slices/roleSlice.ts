@@ -7,9 +7,13 @@ const roleSlice = createSlice({
   name: "roles",
   initialState,
   reducers: {
+    setRoles: (_, { payload }: PayloadAction<Array<Role>>) => payload,
     addRoles: (state, { payload }: PayloadAction<Role>) => [...state, payload]
   }
 })
 
 export const roleReducer = roleSlice.reducer
-export const { addRoles } = roleSlice.actions
+export const {
+  setRoles,
+  addRoles
+} = roleSlice.actions
