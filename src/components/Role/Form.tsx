@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch } from  "react-redux"
 import { addRoles } from "slices/roleSlice"
-import { Button } from '../Button'
+import { Button } from 'components/Button'
+import db from "db"
 
 export const RoleForm: React.FC = () => {
   const dispatch = useDispatch()
@@ -17,8 +18,10 @@ export const RoleForm: React.FC = () => {
       <Button
         label="追加"
         onClick={() => {
-          dispatch(addRoles(role))
-          setRole("")
+          db.table("roles").add({ name: role }).then(id => {
+            dispatch(addRoles(role))
+            setRole("")
+          })
         }}
       />
     </>
