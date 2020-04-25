@@ -1,11 +1,11 @@
 import React from "react"
-import { useSelector } from "react-redux"
-import { RootState } from "../../reducers/root"
-import { Role } from '../../stateType/Role';
+import { Role } from 'stateType/Role';
 
-export const RoleList: React.FC = () => {
-  const roles = useSelector((state: RootState) => state.roles)
+type PropsType = {
+  roles: Array<Role>
+}
 
+export const RoleList: React.FC<PropsType> = ({ roles }) => {
   return (
     <div>
       {roles.map((role: Role) => (
