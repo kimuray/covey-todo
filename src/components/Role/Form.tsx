@@ -19,7 +19,7 @@ export const RoleForm: React.FC = () => {
         label="追加"
         onClick={() => {
           db.table("roles").add({ name: role }).then(id => {
-            dispatch(addRoles(role))
+            dispatch(addRoles({ id: id, name: role }))
             setRole("")
           })
         }}

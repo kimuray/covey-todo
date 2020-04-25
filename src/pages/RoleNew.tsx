@@ -4,7 +4,7 @@ import { RoleList } from 'components/Role/List'
 
 export const RoleNew: React.FC = () => (
   <>
-    <h1>あなたの役割を教えてね♪</h1>
+    <h1>役割入力</h1>
     <RoleList />
     <RoleForm />
   </>
