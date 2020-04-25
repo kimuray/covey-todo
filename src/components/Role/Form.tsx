@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from  "react-redux"
 import { addRoles } from "slices/roleSlice"
-import { Button } from './Button'
+import { Button } from '../Button'
 
 export const RoleForm: React.FC = () => {
   const dispatch = useDispatch()

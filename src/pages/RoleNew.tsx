@@ -1,11 +1,11 @@
 import React from 'react'
-import { Button } from 'components/Button'
-import { TextField } from 'components/TextField';
-import { RoleForm } from 'components/RoleForm';
+import { RoleForm } from 'components/Role/Form'
+import { RoleList } from 'components/Role/List'
 
 export const RoleNew: React.FC = () => (
   <>
     <h1>あなたの役割を教えてね♪</h1>
+    <RoleList />
     <RoleForm />
   </>
 )
