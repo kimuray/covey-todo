@@ -1,5 +1,5 @@
-import React from "react"
-import { Task } from "stateType/Task";
+import React from 'react'
+import { Task } from 'stateType/Task'
 
 type PropsType = {
   roles: Array<Task>

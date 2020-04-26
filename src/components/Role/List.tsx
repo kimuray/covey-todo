@@ -1,5 +1,5 @@
-import React from "react"
-import { Role } from 'stateType/Role';
+import React from 'react'
+import { Role } from 'stateType/Role'
 
 type PropsType = {
   roles: Array<Role>

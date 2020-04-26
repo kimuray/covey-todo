@@ -5,8 +5,4 @@ type PropsType = {
   onClick: () => void
 }
 
-export const Button: React.FC<PropsType> = ({ label, onClick }) => (
-  <button onClick={onClick}>
-    {label}
-  </button>
-)
+export const Button: React.FC<PropsType> = ({ label, onClick }) => <button onClick={onClick}>{label}</button>

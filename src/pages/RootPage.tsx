@@ -1,7 +1,7 @@
-import React from "react"
-import { HashRouter as Router, Switch, Route } from "react-router-dom"
-import { RoleNew } from "pages/RoleNew"
-import { TaskNew } from "pages/TaskNew"
+import React from 'react'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { RoleNew } from 'pages/RoleNew'
+import { TaskNew } from 'pages/TaskNew'
 
 export const RootPage: React.FC = () => {
   return (
