@@ -80,6 +80,7 @@ const resolve = {
 }
 
 const devServer = {
+  historyApiFallback: true,
   contentBase: path.resolve(__dirname, "./public"),
   inline: true,
   hot: true,

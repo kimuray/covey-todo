@@ -8,17 +8,13 @@ import { setRoles } from 'slices/roleSlice';
 import db from 'db';
 import { Button } from 'components/Button';
 import { RootState } from 'reducers/root';
+import { useSelectRoles } from 'hooks/useDatabaseValues';
 
 export const RoleNew: React.FC = () => {
-  const dispatch = useDispatch()
   const history = useHistory()
   const roles = useSelector((state: RootState) => state.roles)
 
-  useEffect(() => {
-    db.table("roles").toArray().then((result: Array<Role>) => {
-      dispatch(setRoles(result))
-    })
-  }, [])
+  useSelectRoles()
 
   return (
     <>
